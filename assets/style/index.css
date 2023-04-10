@@ -1,0 +1,183 @@
+@import url("./reset.css");
+
+:root {
+    --app-dark-bg: #1a1d28;
+    --app-green: #33ab4e;
+    --app-purple: #833cff;
+    --app-orange: #ff833c;
+    --app-blue: #3c57ff;
+    --app-blue-hover: #364ee6;
+    --app-red: #ff3c57;
+    --app-red-hover: #ff2846;
+    --app-grey: #bebebe;
+    --app-ghost-white: #f8f8ff;
+}
+
+.container {
+    width: min(100% - 30px, 1080px);
+    margin-inline: auto;
+}
+
+body {
+    background: #111;
+    height: 100vh;
+    overflow: hidden;
+}
+
+header {
+    color: var(--app-blue);
+    display: grid;
+    place-items: center;
+    margin-top: 50px;
+}
+
+.para {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+    margin-top: 140px;
+    font-size: 28px;
+}
+
+.one {
+    position: fixed;
+    top: 25%;
+    left: 40%;
+    width: 300px;
+    height: 350px;
+    border-radius: 15px;
+    background-color: var(--app-blue);
+    font-size: 20.5px;
+}
+
+.one p {
+    padding: 0px 20px;
+    margin-left: 3px;
+}
+
+dialog::backdrop {
+    backdrop-filter: blur(3px);
+}
+
+.heading {
+    padding: 0px 20px;
+    color: #fff ;
+    font-size: 26px;
+    margin-top: 10px;
+}
+
+button {
+    padding: 20px;
+    width: 110px;
+    margin-top: 30px;
+    margin-left: 20px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.accept {
+    background-color: var(--app-dark-bg);
+    color: #fff;
+    font-size: 17px;
+}
+
+.settings {
+    background-color: var(--app-grey);
+    font-size: 17px;
+}
+
+.two {
+    position: fixed;
+    top: 25%;
+    left: 40%;
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+    background-color: var(--app-dark-bg);
+    font-size: 20px;
+}
+
+.select {
+    margin-top: 16px;
+}
+
+.two p {
+    margin-left: 25px;
+    margin-top: -10px;
+    color: #fff;
+}
+
+.save_preferences {
+    background-color: var(--app-grey);
+    color: #111;
+    font-size: 13px;
+    margin-top: 2px;
+    margin-bottom: 8px;
+    width: 150px;
+    height: 53px;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.switch {
+    font-size: 15px;
+    position: relative;
+    display: inline-block;
+    width: 3.5em;
+    height: 2em;
+    margin-right: 20px;
+}
+
+.slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(200, 208, 40);
+    box-shadow: inset 2px 5px 10px rgba(0,0,0,0.3);
+    transition: .4s;
+    border-radius: 30px;
+}
+
+.slider:before {
+    position: absolute;
+    height: 1.4em;
+    content: "off";
+    width: 0.1em;
+    border-radius: 0px;
+    left: 0.3em;
+    bottom: 0.3em;
+    background-color: white;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: rgb(94, 53, 181);
+    box-shadow: inset 2px 5px 10px rgb(0, 0, 0);
+}
+
+input:checked + .slider:before {
+    transform: translateX(2.8em) ;
+    content: "on";
+}
+/*.one {}
+.heading {}
+.accept {}
+.settings {}
+.two {}
+.heading {}
+.select {}
+label {}
+.slider
+.browser {}
+.operating_system {}
+.screen_width {}
+.screen_height {}
+.save_preferences {}*/
